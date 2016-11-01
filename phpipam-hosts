@@ -368,7 +368,7 @@ try:
       # DHCP, let's assume that it will get a dynamic IP address from
       # a pool). Also, if --dns option is enabled, write down hostname
       # instead of an IP address.
-      if row[3] is not None and row[3] != '3':
+      if row[3] is not None and row[3] != '4':
         if args.dns:
           if hostname:
             ip = '{}'.format(hostname)
