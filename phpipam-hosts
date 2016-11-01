@@ -32,7 +32,7 @@
 import os, sys, re, argparse, MySQLdb, string, socket, struct, ConfigParser, filecmp
 
 # Define script version
-script_version = 'v0.1'
+script_version = 'v0.2.1'
 
 # Parse command line arguments and define defaults
 arg_parser = argparse.ArgumentParser(
@@ -335,7 +335,7 @@ try:
       if hostname:
         host = hostname
       else:
-        if state != '3':
+        if state != '4':
           host = args.prefix_dhcp + '-' + re.sub('\.', '-', ip)
           fqdn = host
         else:
